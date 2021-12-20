@@ -6,14 +6,12 @@ class focus extends React.Component {
    inputRef = React.createRef();
 
 
-  doFocus = () => {
-    
-  };
+  
 
 
   componentDidMount() {
       console.log(this.inputRef.current)
-     // this.inputRef.current.addEventListener("load", this.doFocus);
+
   
     this.inputRef.current.focus(); 
   }
