@@ -6,9 +6,6 @@ class focus extends React.Component {
    inputRef = React.createRef();
 
 
-  
-
-
   componentDidMount() {
       console.log(this.inputRef.current)
 
