@@ -11,10 +11,7 @@ class Copy extends React.Component {
     }
     copyTxt=()=>{ 
         this.txtRef.current.select();
-        document.execCommand('copy',false)
-   
-  
-
+        document.execCommand('copy');
     }
     render(){
 
