@@ -4,7 +4,7 @@ import DataMassaging from "./13.1/data_massaging";
 import Focus from "./14.1/focus";
 import Copy from "./14.2/copy";
 import Products from "./16.1/products"
-
+import Text from "./18.1/Text"
 class App extends React.Component {
 
   
@@ -16,8 +16,9 @@ class App extends React.Component {
         {/*<DataMassaging />
         <Focus />
          <Copy />
+         <Products />
         */}
-       <Products />
+       <Text />
       </div>
     );
   }
