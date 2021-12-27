@@ -5,6 +5,7 @@ import Focus from "./14.1/focus";
 import Copy from "./14.2/copy";
 import Products from "./16.1/products"
 import Text from "./18.1/Text"
+import SimpleFetch from "./19.1/SimpleFetch";
 class App extends React.Component {
 
   
@@ -17,8 +18,11 @@ class App extends React.Component {
         <Focus />
          <Copy />
          <Products />
+           <Text />
         */}
-       <Text />
+
+        <SimpleFetch/>
+     
       </div>
     );
   }
