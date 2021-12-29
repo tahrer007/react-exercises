@@ -1,8 +1,8 @@
 import React from 'react'
-import { useState ,useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import axios from 'axios'
 
-export default function SimpleFetch() {
+export default function Alogolia() {
 
     const [movieData,setMovieData]=useState({
         title : "",
@@ -11,7 +11,7 @@ export default function SimpleFetch() {
 
    useEffect (() => {
         
-         axios.get("https://swapi.dev/api/films/1/")
+         axios.get("https://hn.algolia.com/api/v1/search?query={YOUR QUERY}")
          .then((response)=>{
             
             setMovieData({
@@ -23,15 +23,17 @@ export default function SimpleFetch() {
          })
         
     }, [])
+    search=()=>{
 
+    }
 
     return (
         <div>
-            <ul>
-                <li> movie Title is : {movieData.title}</li>
-                <li> movie director is : {movieData.director}</li>
-            </ul>
-        
+            <label>
+    search:
+    <input type="text" name="search" placeholder='sreach....' />
+  </label>
+  <input type="submit" value="click" onClick={search} />
         </div>
     )
 }
